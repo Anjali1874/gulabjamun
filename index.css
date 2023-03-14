@@ -1,87 +1,86 @@
-body{
-    background-image: url(./indeximg/back.jpg);
-    background-position: center; 
-    background-size: cover;
-    position:relative;
+body {
+  background-image: url(./indeximg/back.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
 }
-.logo{
-    color:white;
+.logo {
+  color: white;
   font-size: larger;
   line-height: 80px;
   font-weight: bold;
-  text-align:center;
+  text-align: center;
+}
+.header {
+  /* border: 3px double darkgreen; */
+  display: flex;
+  min-width: min-content;
+  align-items: center;
+  margin: 0px 30px 20px 30px;
+  position: sticky;
+  top: 5px;
+}
+#img {
+  align-items: center;
+  border-radius: 40%;
+  margin: 4px;
+}
 
+.item2 {
+  text-decoration-color: white;
+  flex-grow: 1;
+  font-size: 2rem;
 }
-.header{
-    /* border: 3px double darkgreen; */
-    display: flex;
-    min-width: min-content;
-    align-items: center;
-    margin: 0px 30px 20px 30px;
-    position: sticky;
-    top: 5px;
+.item3 {
+  background-color: lime;
+  padding: 5px;
+  border-radius: 20%;
+  font-size: 20px;
+  margin: 20px;
 }
-#img{
-    align-items: center;
-    border-radius: 40%;
-    margin: 4px;
+.content {
+  display: grid;
+  font-size: 20px;
+  grid-auto-flow: row;
+  justify-content: center;
+  grid-template-columns: repeat(2, minmax(auto, 47vw));
+  flex-wrap: wrap;
+  row-gap: 10vw;
+  place-items: center;
 }
-
-.item2{
-    text-decoration-color: white;
-    flex-grow: 1;
-    font-size: 2rem;
+.sider {
+  color: white;
 }
-.item3{
-    background-color: lime;
-    padding: 5px;
-    border-radius: 20%;
-    font-size: 20px;
-    margin: 20px;
+.sid1 {
+  background-color: rgb(85, 80, 5);
 }
-.content{
-    display: grid;
-    font-size: 20px;
-    grid-auto-flow: row;
-    justify-content: center;
-    grid-template-columns: repeat(2 , minmax(auto,47vw));
-    flex-wrap: wrap;
-    row-gap: 10vw;
-    place-items: center;
+.sid2 {
+  background-color: brown;
 }
-.sider{
-    color: white;
+.sid3 {
+  background-color: darkviolet;
 }
-.sid1{
-    background-color: rgb(85, 80, 5);
+.sid4 {
+  background-color: darkmagenta;
 }
-.sid2{
-    background-color: brown;
+.sid5 {
+  background-color: dimgray;
 }
-.sid3{
-    background-color: darkviolet;
+.sid6 {
+  background-color: firebrick;
 }
-.sid4{
-    background-color: darkmagenta;
+.sid7 {
+  background-color: rgb(99, 85, 0);
 }
-.sid5{
-    background-color: dimgray;
+.img1 {
+  background-color: antiquewhite;
 }
-.sid6{
-    background-color: firebrick;
+.img2 {
+  background-color: aquamarine;
 }
-.sid7{
-    background-color: rgb(99, 85, 0);
+.img3 {
+  background-color: cyan;
 }
-.img1{
-    background-color: antiquewhite;
-}
-.img2{
-    background-color: aquamarine;
-}
-.img3{
-    background-color: cyan;
-}
-.img4{
-    background-color: fuchsia;
+.img4 {
+  background-color: fuchsia;
 }
