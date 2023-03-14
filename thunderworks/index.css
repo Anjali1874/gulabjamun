@@ -4,6 +4,8 @@
     min-width: min-content;
     align-items: center;
     margin: 0px 30px 20px 30px;
+    position: sticky;
+    top: 5px;
 }
 #img{
     align-items: center;
@@ -29,10 +31,10 @@
     display: grid;
     font-size: 20px;
     grid-auto-flow: row;
-    justify-content: end;
-    grid-template-columns: repeat(2 , minmax(auto,35vw));
+    justify-content: center;
+    grid-template-columns: repeat(2 , minmax(auto,47vw));
     flex-wrap: wrap;
-    row-gap: 3vw;
+    row-gap: 10vw;
     place-items: center;
 }
 .sider{
