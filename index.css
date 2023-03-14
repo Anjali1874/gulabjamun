@@ -1,0 +1,86 @@
+body {
+  background-image: url(./indeximg/back.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.logo {
+  color: white;
+  font-size: larger;
+  line-height: 80px;
+  font-weight: bold;
+  text-align: center;
+}
+.header {
+  /* border: 3px double darkgreen; */
+  display: flex;
+  min-width: min-content;
+  align-items: center;
+  margin: 0px 30px 20px 30px;
+  position: sticky;
+  top: 5px;
+}
+#img {
+  align-items: center;
+  border-radius: 40%;
+  margin: 4px;
+}
+
+.item2 {
+  text-decoration-color: white;
+  flex-grow: 1;
+  font-size: 2rem;
+}
+.item3 {
+  background-color: lime;
+  padding: 5px;
+  border-radius: 20%;
+  font-size: 20px;
+  margin: 20px;
+}
+.content {
+  display: grid;
+  font-size: 20px;
+  grid-auto-flow: row;
+  justify-content: center;
+  grid-template-columns: repeat(2, minmax(auto, 47vw));
+  flex-wrap: wrap;
+  row-gap: 10vw;
+  place-items: center;
+}
+.sider {
+  color: white;
+}
+.sid1 {
+  background-color: rgb(85, 80, 5);
+}
+.sid2 {
+  background-color: brown;
+}
+.sid3 {
+  background-color: darkviolet;
+}
+.sid4 {
+  background-color: darkmagenta;
+}
+.sid5 {
+  background-color: dimgray;
+}
+.sid6 {
+  background-color: firebrick;
+}
+.sid7 {
+  background-color: rgb(99, 85, 0);
+}
+.img1 {
+  background-color: antiquewhite;
+}
+.img2 {
+  background-color: aquamarine;
+}
+.img3 {
+  background-color: cyan;
+}
+.img4 {
+  background-color: fuchsia;
+}
