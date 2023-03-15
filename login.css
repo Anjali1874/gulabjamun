@@ -4,6 +4,12 @@ body{
     background-size: cover;
     position:relative;
 }
+.big{
+    border-width: 6px;
+    block-size: 2rem;
+    max-block-size:500rem;
+  
+}
 .header{
     
     display: flex;
@@ -16,9 +22,9 @@ body{
 }
 
 .item2{
-    color: rgb(67, 25, 25);
+    color: black;
     flex-grow: 1;
-    font-size: 2rem;
+    font-size: 4rem;
 }
 .logincontainer{
     border: none 0px;
@@ -26,19 +32,31 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    column-gap: 3rem;
+    column-gap: 100px;
+    row-gap: 100px;
     flex-wrap: wrap;
+    color: black;
+}
+hr{
+    height:10px ;
 }
 .loginform{
-    background-color:rgb(202, 197, 197);
+  
+    backdrop-filter:brightness(60%);
+    backdrop-filter:blur(15px);
+    border: 3px solid;
+    box-shadow: 20cap;
     font-size: 2rem;
     padding: 0% 4% 4% 4%;
     border-radius: 20%;
     
 }
 .newinfo{
-     background-color: rgb(202, 197, 197); 
+    backdrop-filter:brightness(60%);
+    backdrop-filter:blur(15px);
+    border: 3px solid;
     font-size: 2rem;
     padding: 0% 4% 4% 4%;
     border-radius: 20%;
+   
 }
