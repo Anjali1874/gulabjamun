@@ -1,0 +1,41 @@
+.heading {
+  display: flex;
+  flex-direction: row;
+  border: 3px solid black;
+  align-items: center;
+  position: sticky;
+  top: 5px;
+  justify-content: start;
+}
+#loginimage {
+  border-radius: 40%;
+}
+.headname {
+  font-size: 2rem;
+  flex-grow: 1;
+  min-width: min-content;
+  background-color: burlywood;
+}
+.login {
+  padding: 20px;
+  background-color: aqua;
+  padding: 0.5rem;
+  border-radius: 30px;
+  transition: scale 0.2s ease;
+  cursor: pointer;
+}
+.nodec {
+  text-decoration: none;
+}
+.login:hover {
+  scale: 1.25;
+}
+.login:active {
+  scale: 0.95;
+}
+.content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

@@ -1,0 +1,123 @@
+body {
+  height: 100vh;
+  background-image: url(./indeximg/back.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.heading {
+  display: flex;
+  flex-direction: row;
+  border: 3px solid black;
+  align-items: center;
+  position: sticky;
+  top: 5px;
+  justify-content: start;
+}
+#loginimage {
+  border-radius: 40%;
+}
+.headname {
+  font-size: 2rem;
+  flex-grow: 1;
+  min-width: min-content;
+  background-color: burlywood;
+}
+.nodec{
+    text-decoration: none;
+}
+.contents {
+    width: 100%;
+    color: white;
+    border: 3px double white;
+    font-size: 2rem;
+    display: grid;
+    backdrop-filter: blur(15px);
+    grid-template-rows: repeat(3, minmax(20px, 400px));
+    grid-template-columns: repeat(2, 40vw);
+    place-items: center center;
+  
+  }
+.login {
+  padding: 20px;
+  background-color: aqua;
+  padding: 0.5rem;
+  border-radius: 30px;
+  transition: scale 0.2s ease;
+  cursor: pointer;
+}
+.login:hover {
+  scale: 1.25;
+}
+.login:active {
+  scale: 0.95;
+}
+li {
+  list-style: none;
+  font-size: 2rem;
+}
+.active {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: scale 0.2s ease;
+}
+.active:hover {
+  color: orange;
+  scale: 1.2;
+}
+.active:active {
+  scale: 0.95;
+}
+.navbar .links {
+  width: 100%;
+  height: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  height: fit-content;
+  justify-content: center;
+  column-gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.navbar .toggle_btn {
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  position: absolute;
+  top: 100px;
+  right: 2rem;
+  cursor: pointer;
+  display: none;
+}
+@media (max-width: 800px) {
+  .navbar .links {
+    display: none;
+  }
+  .navbar .toggle_btn {
+    display: contents;
+    justify-self: center;
+  }
+  .dropdown_menu {
+    display: block;
+  }
+}
+.dropdown_menu.open {
+  height: 330px;
+}
+.dropdown_menu {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  overflow: hidden;
+  height: 0;
+  transition: height 0.2s ease;
+}
+.dropdown_menu li {
+  display: flex;
+  padding: 0.7rem;
+  justify-content: center;
+  align-items: center;
+}
+

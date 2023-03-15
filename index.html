@@ -1,12 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Krushi samvardhan</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Krushi samvardhan</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="heading">
+      <div class="logoimg" id="logoimage">
+        <img src="./indeximg/krushilogo.png" alt="logo" height="70px" />
+      </div>
+      <div class="headname">Krushi samvardhan</div>
+      <div class="login" id="login">
+        <a class="nodec" href="./login.html">LOGIN</a>
+      </div>
+    </div>
+    <div class="navbar">
+      <ul class="links">
+        <li><a class="active" href="./yojanas.html">YOJANAS</a></li>
+        <li><a class="active" href="#">MARKET PLACES</a></li>
+        <li><a class="active" href="#">MODERN FARMING TOOLS</a></li>
+        <li><a class="active" href="#">UPCOMING EXHIBITIONS</a></li>
+        <li><a class="active" href="#">AGRO-TOURISM</a></li>
+        <li><a class="active" href="#">FERTILIZERS AND PESTICIDES</a></li>
+        <li><a class="active" href="#">WEATHER ALERTS</a></li>
+      </ul>
+      <div class="toggle_btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+    <div class="dropdown_menu">
+      <ul class="links">
+        <li><a class="active" href="./yojanas.html">YOJANAS</a></li>
+        <li><a class="active" href="#">MARKET PLACES</a></li>
+        <li><a class="active" href="#">MODERN FARMING TOOLS</a></li>
+        <li><a class="active" href="#">UPCOMING EXHIBITIONS</a></li>
+        <li><a class="active" href="#">AGRO-TOURISM</a></li>
+        <li><a class="active" href="#">FERTILIZERS AND PESTICIDES</a></li>
+        <li><a class="active" href="#">WEATHER ALERTS</a></li>
+      </ul>
+    </div>
+
+    <div class="contents">
+      <div class="image img1"><img src="./indeximg/form.png" alt="form" /></div>
+      <div class="text info1">
+        PM kisan yojana application date extended. New state government schemes
+        to be launched next week
+      </div>
+      <div class="image img2">
+        <img src="./indeximg/polyhouse.png" alt="polyhouse" />
+      </div>
+      <div class="text info2">
+        New and efficient polyhouse farming being practiced in Southern parts of
+        India
+      </div>
+      <div class="image img3">
+        <img src="./indeximg/thunderclouds.png" alt="t" />
+      </div>
+      <div class="text info3">
+        Thunderstorms exprected for the next week. Please exercise caution and
+        stay indoors
+      </div>
+    </div>
+
+    <script>
+      const toggleBtn = document.querySelector(".toggle_btn");
+      const toggleBtnIcon = document.querySelector(".toggle_btn i");
+      const dropDownMenu = document.querySelector(".dropdown_menu");
+
+      toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle("open");
+        const isOpen = dropDownMenu.classList.contains("open");
+
+        toggleBtnIcon.classList = isOpen
+          ? "fa-solid fa-xmark"
+          : "fa-solid fa-bars";
+      };
+    </script>
+  </body>
 </html>
