@@ -75,17 +75,15 @@ ul {
 
 .item2 {
   color: white;
-  flex-grow: 1fr;
+  flex-grow: 1;
   font-size: 2rem;
 }
 .item3 {
   flex-direction: row-reverse;
-
   background-color: lime;
   padding: 5px;
   border-radius: 20%;
   font-size: 20px;
-  float: right;
 }
 .content {
   display: grid;
@@ -96,40 +94,4 @@ ul {
   flex-wrap: wrap;
   row-gap: 10vw;
   place-items: center;
-}
-.sider {
-  color: white;
-}
-.sid1 {
-  background-color: rgb(85, 80, 5);
-}
-.sid2 {
-  background-color: brown;
-}
-.sid3 {
-  background-color: darkviolet;
-}
-.sid4 {
-  background-color: darkmagenta;
-}
-.sid5 {
-  background-color: dimgray;
-}
-.sid6 {
-  background-color: firebrick;
-}
-.sid7 {
-  background-color: rgb(99, 85, 0);
-}
-.img1 {
-  background-color: antiquewhite;
-}
-.img2 {
-  background-color: aquamarine;
-}
-.img3 {
-  background-color: cyan;
-}
-.img4 {
-  background-color: fuchsia;
 }

@@ -17,40 +17,46 @@
   <body>
     <header>
       <div class="navbar">
-        <div class="logo"><a href="#">Web dev</a></div>
+        <div class="logo"><a href="#">Web dev</a></div><br>
         <ul class="links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">about</a></li>
-          <li><a href="#">contact</a></li>
-          <li><a href="#">services</a></li>
-        </ul>
-        <a href="#" class="action_btn">Get started</a>
+            <li><a class="active" href="#"><pre>           HOME              </a></li>
+            <li><a class="active" href="#"><pre>          YOJANAS            </a></li>
+            <li><a class="active" href="#"><pre>      MARKET PLACES          </a></li>
+            <li><a class="active" href="#"><pre>   MODERN FARMING TOOLS      </a></li>
+            <li><a class="active" href="#"><pre>   UPCOMING EXHIBITIONS      </a></li>
+            <li><a class="active" href="#"><pre>        AGRO-TOURISM         </a></li>
+            <li><a class="active" href="#"><pre>  FERTILIZERS AND PESTICIDES </a></li>
+            <li><a class="active" href="#"><pre>        WEATHER ALERTS       </a></li>
+            </ul>
         <div class="toggle_btn">
           <i class="fa-solid fa-bars"></i>
         </div>
       </div>
 
-      <div class="dropdown_menu open">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">about</a></li>
-        <li><a href="#">contact</a></li>
-        <li><a href="#">services</a></li>
-        <li><a href="#" class="action_btn">Get started</a></li>
+      <div class="dropdown_menu">
+          <li><a class="active" href="#"><pre>           HOME              </a></li>
+          <li><a class="active" href="#"><pre>          YOJANAS            </a></li>
+          <li><a class="active" href="#"><pre>      MARKET PLACES          </a></li>
+          <li><a class="active" href="#"><pre>   MODERN FARMING TOOLS      </a></li>
+          <li><a class="active" href="#"><pre>   UPCOMING EXHIBITIONS      </a></li>
+          <li><a class="active" href="#"><pre>        AGRO-TOURISM         </a></li>
+          <li><a class="active" href="#"><pre>  FERTILIZERS AND PESTICIDES </a></li>
+          <li><a class="active" href="#"><pre>        WEATHER ALERTS       </a></li>
       </div>
     </header>
     <script>
-      const toggleBtn = document.querySelector('.toggle_btn')
-      const toggleBtnIcon = document.querySelector('.toggle_btn i')
-      const dropDownMenu = document.querySelector('.dropdown_menu')
+      const toggleBtn = document.querySelector(".toggle_btn");
+      const toggleBtnIcon = document.querySelector(".toggle_btn i");
+      const dropDownMenu = document.querySelector(".dropdown_menu");
 
       toggleBtn.onclick = function () {
-        dropDownMenu.classList.toggle('open')
-        const isOpen = dropDownMenu.classList.contains('open')
+        dropDownMenu.classList.toggle("open");
+        const isOpen = dropDownMenu.classList.contains("open");
 
         toggleBtnIcon.classList = isOpen
-        ?'fa-solid fa-xmark'
-        :'fa-solid fa-bars'
-      }
+          ? "fa-solid fa-xmark"
+          : "fa-solid fa-bars";
+      };
     </script>
   </body>
 </html>
