@@ -1,6 +1,5 @@
 body{
-    background-image: url(loginback.jpg);
-    
+    background-image: url(./indeximg/loginback.jpg);
     background-position: center; 
     background-size: cover;
     position:relative;
